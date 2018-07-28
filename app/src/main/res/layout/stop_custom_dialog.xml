@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white">
+
+        <!--INFORMATION-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtBlink"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Click on Bus Number to view more Information "/>
+
+        <!--STOP DETAILS-->
+        <TextView
+            android:id="@+id/Stop_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/cardview_dark_background"
+            android:text="STOP NAME :" />
+
+        <!--STOP DETAILS-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/Stop_Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/cardview_dark_background"
+            android:hint="ABC"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/Stop_txt"
+            android:layout_toEndOf="@+id/Stop_txt" />
+
+        <!--TABLE LAYOUT-->
+        <!-- Table - 1-->
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:id="@+id/tableLayout1">
+
+            <!--Table-1, ROW- 1-->
+            <TableRow
+                android:id="@+id/row_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp">
+
+                <TextView
+
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#FF58A7EC"
+                    android:gravity="center"
+                    android:text="Bus Number "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/Stop_Number"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#FF58"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <!--Table-1, ROW- 2-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/cardview_light_background"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Route No"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/Stop_Route"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <!--Table-1, ROW- 3-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@color/cardview_light_background">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Destination"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/Stop_Destination"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <!--Table-1, ROW- 4-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="@color/cardview_light_background">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Exp.Time"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/Stop_ExptTime"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+
+

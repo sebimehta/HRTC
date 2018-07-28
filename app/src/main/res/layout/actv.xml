@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity" >
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:completionThreshold="1"
+            android:hint="search"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+    <!--Button-->
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnShowRoute"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="77dp"
+        android:background="#FF58A7EC"
+        android:text="SHOW BUS"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/autoComplete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp" />
+
+
+</RelativeLayout>

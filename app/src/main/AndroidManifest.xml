@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.hrtc">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/mainlogo"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Main_Menu_Bar" android:windowSoftInputMode="stateHidden" />
+
+    <activity android:name=".Track_Login" />
+
+    <activity android:name=".Login" android:windowSoftInputMode="stateHidden" />
+
+    <activity android:name=".Passenger" android:windowSoftInputMode="stateHidden" />
+
+    <activity android:name=".Route" android:parentActivityName=".Main_Menu_Bar"
+        android:windowSoftInputMode="stateHidden" />
+
+    <activity android:name=".Route_Record" />
+
+    <activity android:name=".Stop_Bus" android:parentActivityName=".Main_Menu_Bar"
+        android:windowSoftInputMode="stateHidden" />
+
+    <activity android:name=".Stop_record" />
+
+    <activity android:name=".MapsActivity" />
+
+
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAcDVHMyx-t5o8pt0KVij3I4MBxWFAL_0E" />
+
+</application>
+</manifest>
